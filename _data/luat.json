@@ -1,0 +1,622 @@
+[
+  {
+    "key": "R001",
+    "vetrai": "MD1",
+    "vephai": "RA1"
+  },
+  {
+    "key": "R002",
+    "vetrai": "MD2",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R003",
+    "vetrai": "MD3",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R004",
+    "vetrai": "MD3",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R005",
+    "vetrai": "H1",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R006",
+    "vetrai": "H1",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R007",
+    "vetrai": "H6^MH1",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R008",
+    "vetrai": "H3^MH1",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R009",
+    "vetrai": "H3^MH1",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R010",
+    "vetrai": "H4^MH1",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R011",
+    "vetrai": "H4^MH2",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R012",
+    "vetrai": "H6^MH3^G2",
+    "vephai": "RA1"
+  },
+  {
+    "key": "R013",
+    "vetrai": "H2^MH4",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R014",
+    "vetrai": "H5^MH1^G4",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R015",
+    "vetrai": "H5^MH1^G3",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R016",
+    "vetrai": "H5^K2",
+    "vephai": "RA3"
+  },
+  {
+    "key": "R017",
+    "vetrai": "H3^K2",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R018",
+    "vetrai": "H4^K2",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R019",
+    "vetrai": "MD2^G4",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R020",
+    "vetrai": "MD3^G4",
+    "vephai": "RA2"
+  },
+  {
+    "key": "R021",
+    "vetrai": "MD2^H6",
+    "vephai": "DH3"
+  },
+  {
+    "key": "R022",
+    "vetrai": "MD3^H2",
+    "vephai": "DH4"
+  },
+  {
+    "key": "R023",
+    "vetrai": "MD3^H6",
+    "vephai": "DH4"
+  },
+  {
+    "key": "R024",
+    "vetrai": "MD3^H3",
+    "vephai": "DH2"
+  },
+  {
+    "key": "R025",
+    "vetrai": "MH4",
+    "vephai": "DH3"
+  },
+  {
+    "key": "R026",
+    "vetrai": "MD2^G3",
+    "vephai": "DH2"
+  },
+  {
+    "key": "R027",
+    "vetrai": "MD2^G4",
+    "vephai": "DH3"
+  },
+  {
+    "key": "R028",
+    "vetrai": "MD3^G3",
+    "vephai": "DH2"
+  },
+  {
+    "key": "R029",
+    "vetrai": "H4^G2",
+    "vephai": "O4"
+  },
+  {
+    "key": "R030",
+    "vetrai": "G2",
+    "vephai": "O3"
+  },
+  {
+    "key": "R031",
+    "vetrai": "G3",
+    "vephai": "O3"
+  },
+  {
+    "key": "R032",
+    "vetrai": "G4",
+    "vephai": "O3"
+  },
+  {
+    "key": "R033",
+    "vetrai": "G5",
+    "vephai": "O2"
+  },
+  {
+    "key": "R034",
+    "vetrai": "G3",
+    "vephai": "O2"
+  },
+  {
+    "key": "R035",
+    "vetrai": "G5",
+    "vephai": "O1"
+  },
+  {
+    "key": "R036",
+    "vetrai": "MD2",
+    "vephai": "CPU4"
+  },
+  {
+    "key": "R037",
+    "vetrai": "MD1",
+    "vephai": "CPU3"
+  },
+  {
+    "key": "R038",
+    "vetrai": "MD1",
+    "vephai": "CPU3"
+  },
+  {
+    "key": "R039",
+    "vetrai": "MD3",
+    "vephai": "CPU6"
+  },
+  {
+    "key": "R040",
+    "vetrai": "MD3",
+    "vephai": "CPU4"
+  },
+  {
+    "key": "R041",
+    "vetrai": "MD2",
+    "vephai": "CPU6"
+  },
+  {
+    "key": "R042",
+    "vetrai": "MD1",
+    "vephai": "CPU1"
+  },
+  {
+    "key": "R043",
+    "vetrai": "G1",
+    "vephai": "CPU1"
+  },
+  {
+    "key": "R044",
+    "vetrai": "G2",
+    "vephai": "CPU2"
+  },
+  {
+    "key": "R045",
+    "vetrai": "G3",
+    "vephai": "CPU3"
+  },
+  {
+    "key": "R046",
+    "vetrai": "G4",
+    "vephai": "CPU3"
+  },
+  {
+    "key": "R047",
+    "vetrai": "G4",
+    "vephai": "CPU5"
+  },
+  {
+    "key": "R048",
+    "vetrai": "G5",
+    "vephai": "CPU4"
+  },
+  {
+    "key": "R049",
+    "vetrai": "G5",
+    "vephai": "CPU3"
+  },
+  {
+    "key": "R050",
+    "vetrai": "G5",
+    "vephai": "CPU6"
+  },
+  {
+    "key": "R051",
+    "vetrai": "MH1^H1^CPU6^DH2^RA3^O2^G5",
+    "vephai": "LT1"
+  },
+  {
+    "key": "R052",
+    "vetrai": "MH1^H1^CPU6^DH2^RA3^O3^G5",
+    "vephai": "LT2"
+  },
+  {
+    "key": "R053",
+    "vetrai": "MH3^H2^CPU4^DH1^RA3^O2^G5",
+    "vephai": "LT3"
+  },
+  {
+    "key": "R054",
+    "vetrai": "MH3^H2^CPU4^DH2^RA3^O2^G5",
+    "vephai": "LT4"
+  },
+  {
+    "key": "R055",
+    "vetrai": "MH3^H5^CPU4^DH1^RA3^O1^G5",
+    "vephai": "LT5"
+  },
+  {
+    "key": "R056",
+    "vetrai": "MH2^H5^CPU4^DH2^RA3^O2^G5^K4",
+    "vephai": "LT6"
+  },
+  {
+    "key": "R057",
+    "vetrai": "MH1^H5^CPU4^DH2^RA3^O2^G5^K4",
+    "vephai": "LT7"
+  },
+  {
+    "key": "R058",
+    "vetrai": "MH2^H6^CPU3^DH2^RA3^O2^G3",
+    "vephai": "LT8"
+  },
+  {
+    "key": "R059",
+    "vetrai": "MH2^H6^CPU4^DH2^RA3^O1^G5",
+    "vephai": "LT9"
+  },
+  {
+    "key": "R060",
+    "vetrai": "MH1^H6^CPU4^DH2^RA3^O1^G5",
+    "vephai": "LT10"
+  },
+  {
+    "key": "R061",
+    "vetrai": "MH1^H6^CPU4^DH2^RA3^O2^G5",
+    "vephai": "LT11"
+  },
+  {
+    "key": "R062",
+    "vetrai": "MH3^H3^CPU3^DH1^RA3^O2^G5",
+    "vephai": "LT12"
+  },
+  {
+    "key": "R063",
+    "vetrai": "MH3^H7^CPU4^DH2^RA3^O2^G5",
+    "vephai": "LT13"
+  },
+  {
+    "key": "R064",
+    "vetrai": "MH3^H4^CPU4^DH1^RA3^O2^G5",
+    "vephai": "LT14"
+  },
+  {
+    "key": "R065",
+    "vetrai": "RA1^H2^MH3^O2^G1^CPU",
+    "vephai": "LT15"
+  },
+  {
+    "key": "R066",
+    "vetrai": "RA1^O3^H2^MH2^G2^CPU2",
+    "vephai": "LT16"
+  },
+  {
+    "key": "R067",
+    "vetrai": "RA1^O3^CPU5^H5^MH2^G2",
+    "vephai": "LT17"
+  },
+  {
+    "key": "R068",
+    "vetrai": "RA1^O3^H2^CPU1^MH3^G1",
+    "vephai": "LT18"
+  },
+  {
+    "key": "R069",
+    "vetrai": "RA1^O3^CPU2^H3^MH3^G2",
+    "vephai": "LT19"
+  },
+  {
+    "key": "R070",
+    "vetrai": "RA1^O2^CPU1^G1^MH2^H3",
+    "vephai": "LT20"
+  },
+  {
+    "key": "R071",
+    "vetrai": "RA1^O2^CPU2^G2^H6^MH3",
+    "vephai": "LT21"
+  },
+  {
+    "key": "R072",
+    "vetrai": "H4^RA1^O2^CPU3^MH3^G3",
+    "vephai": "LT22"
+  },
+  {
+    "key": "R073",
+    "vetrai": "H4^CPU2^MH1^G3^O3^RA2",
+    "vephai": "LT23"
+  },
+  {
+    "key": "R074",
+    "vetrai": "H2^G1^RA1^MH1^CPU1^O5",
+    "vephai": "LT24"
+  },
+  {
+    "key": "R075",
+    "vetrai": "H2^RA1^G2^CPU2^O3^MH2",
+    "vephai": "LT25"
+  },
+  {
+    "key": "R076",
+    "vetrai": "H2^RA1^G3^MH2^O2^CPU3 ",
+    "vephai": "LT26"
+  },
+  {
+    "key": "R077",
+    "vetrai": "H1^G5^MH1",
+    "vephai": "LT27"
+  },
+  {
+    "key": "R078",
+    "vetrai": "H1^G5^RA2",
+    "vephai": "LT28"
+  },
+  {
+    "key": "R079",
+    "vetrai": "H5^MH2^O3^G2",
+    "vephai": "LT29"
+  },
+  {
+    "key": "R080",
+    "vetrai": "H5^MH2^O2^G2",
+    "vephai": "LT30"
+  },
+  {
+    "key": "R081",
+    "vetrai": "H5^RA2^MH2^G3",
+    "vephai": "LT31"
+  },
+  {
+    "key": "R082",
+    "vetrai": "H5^G3^RA2^G3^MH3",
+    "vephai": "LT32"
+  },
+  {
+    "key": "R083",
+    "vetrai": "H3^RA1^CPU3^G2^MH3",
+    "vephai": "LT33"
+  },
+  {
+    "key": "R084",
+    "vetrai": "RA2^H4^CPU2^G3^MH1",
+    "vephai": "LT34"
+  },
+  {
+    "key": "R085",
+    "vetrai": "RA2^H2^CPU2^G3^MH3",
+    "vephai": "LT35"
+  },
+  {
+    "key": "R086",
+    "vetrai": "RA2^H6^CPU2^G2^MH2",
+    "vephai": "LT36"
+  },
+  {
+    "key": "R087",
+    "vetrai": "RA2^H2^CPU5^G5^MH2",
+    "vephai": "LT37"
+  },
+  {
+    "key": "R088",
+    "vetrai": "RA2^O3^G3^H3^MH3",
+    "vephai": "LT38"
+  },
+  {
+    "key": "R089",
+    "vetrai": "RA2^O5^G5^MH3^H6",
+    "vephai": "LT39"
+  },
+  {
+    "key": "R090",
+    "vetrai": "RA2^O3^G3^H5^MH3",
+    "vephai": "LT40"
+  },
+  {
+    "key": "R091",
+    "vetrai": "RA2^O3^H3^MH1^G4",
+    "vephai": "LT41"
+  },
+  {
+    "key": "R092",
+    "vetrai": "RA2^O3^H3^MH2^G3",
+    "vephai": "LT42"
+  },
+  {
+    "key": "R093",
+    "vetrai": "RA1^H2^O2^MH3^G2",
+    "vephai": "LT43"
+  },
+  {
+    "key": "R094",
+    "vetrai": "RA2^G3^MH1^H4",
+    "vephai": "LT34"
+  },
+  {
+    "key": "R095",
+    "vetrai": "RA2^G3^H5^MH2",
+    "vephai": "LT44"
+  },
+  {
+    "key": "R096",
+    "vetrai": "RA2^G3^H5^MH2",
+    "vephai": "LT45"
+  },
+  {
+    "key": "R097",
+    "vetrai": "RA2^G3^H3^MH2",
+    "vephai": "LT46"
+  },
+  {
+    "key": "R098",
+    "vetrai": "RA2^G3^H2^MH2",
+    "vephai": "LT47"
+  },
+  {
+    "key": "R099",
+    "vetrai": "RA2^G3^H2^MH2",
+    "vephai": "LT48"
+  },
+  {
+    "key": "R100",
+    "vetrai": "RA2^G4^H4^MH2^O2",
+    "vephai": "LT49"
+  },
+  {
+    "key": "R101",
+    "vetrai": "RA2^G4^H4^MH2^O3",
+    "vephai": "LT50"
+  },
+  {
+    "key": "R102",
+    "vetrai": "RA2^G4^H5^MH3",
+    "vephai": "LT51"
+  },
+  {
+    "key": "R103",
+    "vetrai": "RA2^G4^H6^MH3^CPU3",
+    "vephai": "LT52"
+  },
+  {
+    "key": "R104",
+    "vetrai": "RA2^G4^H6^MH3^CPU3",
+    "vephai": "LT53"
+  },
+  {
+    "key": "R105",
+    "vetrai": "RA2^G5^H3^MH3^CPU3",
+    "vephai": "LT54"
+  },
+  {
+    "key": "R106",
+    "vetrai": "RA2^G5^H4^MH3^CPU3",
+    "vephai": "LT55"
+  },
+  {
+    "key": "R107",
+    "vetrai": "RA2^G5^H2^MH3^CPU3",
+    "vephai": "LT56"
+  },
+  {
+    "key": "R108",
+    "vetrai": "RA2^G5^H5^MH3^CPU4",
+    "vephai": "LT56"
+  },
+  {
+    "key": "R109",
+    "vetrai": "RA2^G5^H5^MH3^CPU4",
+    "vephai": "LT58"
+  },
+  {
+    "key": "R110",
+    "vetrai": "RA2^G5^H4^MH3^CPU4",
+    "vephai": "LT59"
+  },
+  {
+    "key": "R111",
+    "vetrai": "RA2^G5^H6^MH1^CPU4",
+    "vephai": "LT60"
+  },
+  {
+    "key": "R112",
+    "vetrai": "MH3^H3^CPU3^DH2^RA3^02^G5",
+    "vephai": "LT12"
+  },
+  {
+    "key": "R113",
+    "vetrai": "MH3^H7^CPU4^DH2^RA3^O3^G5",
+    "vephai": "LT61"
+  },
+  {
+    "key": "R114",
+    "vetrai": "G5^K4^H5^MH1",
+    "vephai": "LT62"
+  },
+  {
+    "key": "R115",
+    "vetrai": "MH2^H6^CPU3^DH2^RA3^O2^G3^K5",
+    "vephai": "LT8"
+  },
+  {
+    "key": "R116",
+    "vetrai": "MH3^H5^CPU4^DH1^RA3^O1^G5^K5",
+    "vephai": "LT5"
+  },
+  {
+    "key": "R117",
+    "vetrai": "MH2^H5^CPU4^DH2^RA3^O2^G5^K5",
+    "vephai": "LT6"
+  },
+  {
+    "key": "R118",
+    "vetrai": "MH1^H5^CPU4^DH2^RA3^O2^G5^K5",
+    "vephai": "LT62"
+  },
+  {
+    "key": "R119",
+    "vetrai": "MH3^H7^CPU4^DH2^RA3^O2^G5^k5",
+    "vephai": "LT13"
+  },
+  {
+    "key": "R120",
+    "vetrai": "MH1^H6^CPU4^DH2^RA3^O2^G5^k5",
+    "vephai": "LT11"
+  },
+  {
+    "key": "R121",
+    "vetrai": "MH2^H5^CPU4^DH2^RA3^O2^G5^K2",
+    "vephai": "LT6"
+  },
+  {
+    "key": "R122",
+    "vetrai": "MH1^H5^CPU4^DH2^RA3^O2^G5^K2",
+    "vephai": "LT62"
+  },
+  {
+    "key": "R123",
+    "vetrai": "MH2^H6^CPU4^DH2^RA3^O1^G5^K2",
+    "vephai": "LT9"
+  },
+  {
+    "key": "R124",
+    "vetrai": "MH1^H5^CPU4^DH2^RA3^O2^G5^K2",
+    "vephai": "LT7"
+  }
+]

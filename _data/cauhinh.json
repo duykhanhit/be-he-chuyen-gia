@@ -1,0 +1,158 @@
+[
+  {
+    "key": "CPU1",
+    "value": "Intel Pentium/Celeron"
+  },
+  {
+    "key": "CPU2",
+    "value": "Intel Core i3"
+  },
+  {
+    "key": "CPU3",
+    "value": "Intel Core i5"
+  },
+  {
+    "key": "CPU4",
+    "value": "Intel Core i7"
+  },
+  {
+    "key": "CPU5",
+    "value": "AMD"
+  },
+  {
+    "key": "DH1",
+    "value": "Card rời"
+  },
+  {
+    "key": "DH2",
+    "value": "Không card rời"
+  },
+  {
+    "key": "G1",
+    "value": "Dưới 10 triệu"
+  },
+  {
+    "key": "G2",
+    "value": "10 - 15 triệu"
+  },
+  {
+    "key": "G3",
+    "value": "15 - 20 triệu"
+  },
+  {
+    "key": "G4",
+    "value": "20 - 25 triệu"
+  },
+  {
+    "key": "G5",
+    "value": "Trên 25 triệu"
+  },
+  {
+    "key": "H1",
+    "value": "Apple"
+  },
+  {
+    "key": "H2",
+    "value": "Asus"
+  },
+  {
+    "key": "H3",
+    "value": "Acer"
+  },
+  {
+    "key": "H4",
+    "value": "Dell"
+  },
+  {
+    "key": "H5",
+    "value": "HP"
+  },
+  {
+    "key": "H6",
+    "value": "Lenovo"
+  },
+  {
+    "key": "H7",
+    "value": "LG"
+  },
+  {
+    "key": "K1",
+    "value": "Cảm biến vân tay"
+  },
+  {
+    "key": "K2",
+    "value": "Màn hình cảm ứng"
+  },
+  {
+    "key": "K3",
+    "value": "Cổng VGA"
+  },
+  {
+    "key": "K4",
+    "value": "Màn hình gập 360"
+  },
+  {
+    "key": "K5",
+    "value": "Màn hình chống chói Anti Glare"
+  },
+  {
+    "key": "MD1",
+    "value": "Văn phòng - Học tập"
+  },
+  {
+    "key": "MD2",
+    "value": "Chơi game"
+  },
+  {
+    "key": "MD3",
+    "value": "Đồ họa - kỹ thuật"
+  },
+  {
+    "key": "MH1",
+    "value": "khoảng 13 inches"
+  },
+  {
+    "key": "MH2",
+    "value": "khoảng 14 inches"
+  },
+  {
+    "key": "MH3",
+    "value": "15-16 inches"
+  },
+  {
+    "key": "MH4",
+    "value": "17-18 inches"
+  },
+  {
+    "key": "O1",
+    "value": "SSD 1TB"
+  },
+  {
+    "key": "O2",
+    "value": "SSD 512GB"
+  },
+  {
+    "key": "O3",
+    "value": "SSD 256GB"
+  },
+  {
+    "key": "O4",
+    "value": "SSD 128GB"
+  },
+  {
+    "key": "O5",
+    "value": ">HDD 1T"
+  },
+  {
+    "key": "RA1",
+    "value": "RAM 4GB"
+  },
+  {
+    "key": "RA2",
+    "value": "RAM 8GB"
+  },
+  {
+    "key": "RA3",
+    "value": "RAM 16GB"
+  }
+]
