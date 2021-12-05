@@ -27,19 +27,20 @@ module.exports = {
     const { gt } = req.body;
 
     const rootArray = gt.split(" ^ ");
-    const cloneRootArray = gt.split(" ^ ");
     let rootHoanvi = [];
 
     let rules = [];
     let length = 0;
     do {
       length = rules.length;
-      let hoanvi = tinhHoanVi(cloneRootArray);
+      let hoanvi = tinhHoanVi(rootArray);
       hoanvi = hoanvi.map((e) => e.join("^"));
 
-      for (let i = 0; i < cloneRootArray.length; i++) {
-        rootHoanvi = [...tinhHoanVi([cloneRootArray[i]]).flat(), ...rootHoanvi];
+      for (let i = 0; i < rootArray.length; i++) {
+        rootHoanvi = [...tinhHoanVi([rootArray[i]]).flat(), ...rootHoanvi];
       }
+
+      const cloneRootArray = [...rootArray];
 
       while (cloneRootArray.length > 2) {
         cloneRootArray.shift();
@@ -58,9 +59,11 @@ module.exports = {
           rootArray.push(e.vephai);
         }
       });
+      console.log("aaa", rootArray);
     } while (rules.length !== length);
 
-    const ruleLaptop = rules.find((e) => e.vephai.indexOf("LT"));
+    const ruleLaptop = rules.find((e) => e.vephai.includes("LT"));
+
     let laptop;
     if (ruleLaptop) {
       laptop = await Laptop.find({
@@ -71,7 +74,7 @@ module.exports = {
     return res.json({
       success: true,
       data: rules,
-      laptop,
+      laptop: laptop || [],
     });
   }),
 };

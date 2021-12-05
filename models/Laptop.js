@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 const LaptopSchema = new mongoose.Schema(
   {
+    key: {
+      type: String,
+      required: [true, "Key is invalid."],
+    },
     name: {
       type: String,
       required: [true, "Name is invalid."],
