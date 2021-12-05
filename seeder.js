@@ -7,6 +7,7 @@ dotenv.config({ path: "./config/config.env" });
 
 const CauHinh = require("./models/CauHinh");
 const Rule = require("./models/Rule");
+const Laptop = require("./models/Laptop");
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -23,10 +24,15 @@ const luat = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/luat.json`, "utf-8")
 );
 
+const laptop = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/laptop.json`, "utf-8")
+);
+
 const importData = async () => {
   try {
     await CauHinh.create(cauhinh);
     await Rule.create(luat);
+    await Laptop.create(laptop);
 
     console.log("Imported...".green.inverse);
     process.exit();
@@ -39,6 +45,7 @@ const deleteData = async () => {
   try {
     await CauHinh.deleteMany();
     await Rule.deleteMany();
+    await Laptop.deleteMany();
 
     console.log("Deleted...".red.inverse);
     process.exit();
