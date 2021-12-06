@@ -27,40 +27,25 @@ module.exports = {
     const { gt } = req.body;
 
     const rootArray = gt.split(" ^ ");
-    let rootHoanvi = [];
-
-    let rules = [];
-    let length = 0;
-    do {
-      length = rules.length;
-      let hoanvi = tinhHoanVi(rootArray);
-      hoanvi = hoanvi.map((e) => e.join("^"));
-
-      for (let i = 0; i < rootArray.length; i++) {
-        rootHoanvi = [...tinhHoanVi([rootArray[i]]).flat(), ...rootHoanvi];
-      }
-
-      const cloneRootArray = [...rootArray];
-
-      while (cloneRootArray.length > 2) {
-        cloneRootArray.shift();
-        const cloneArray = tinhHoanVi(cloneRootArray).map((e) => e.join("^"));
-        rootHoanvi = [...cloneArray, ...rootHoanvi];
-      }
-
-      rootHoanvi = [...rootHoanvi, ...hoanvi].filter((e) => e.length > 0);
-
-      rules = await Rule.find({
-        vetrai: { $in: rootHoanvi.flat() },
-      });
-
-      rules.forEach((e) => {
-        if (!rootArray.includes(e.vephai)) {
-          rootArray.push(e.vephai);
-        }
-      });
-      console.log("aaa", rootArray);
-    } while (rules.length !== length);
+    const rules = await Rule.aggregate([
+      {
+        $addFields: {
+          temp: { $split: ["$vetrai", "^"] },
+        },
+      },
+      {
+        $sort: {
+          temp: -1,
+        },
+      },
+      {
+        $match: {
+          temp: {
+            $eq: rootArray,
+          },
+        },
+      },
+    ]);
 
     const ruleLaptop = rules.find((e) => e.vephai.includes("LT"));
 
