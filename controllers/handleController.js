@@ -27,25 +27,46 @@ module.exports = {
     const { gt } = req.body;
 
     const rootArray = gt.split(" ^ ");
-    const rules = await Rule.aggregate([
-      {
-        $addFields: {
-          temp: { $split: ["$vetrai", "^"] },
-        },
-      },
-      {
-        $sort: {
-          temp: -1,
-        },
-      },
-      {
-        $match: {
-          temp: {
-            $eq: rootArray,
+
+    let rules = [];
+    let length = 0;
+
+    do {
+      length = rules.length;
+      rules = await Rule.aggregate([
+        {
+          $addFields: {
+            temp: { $split: ["$vetrai", "^"] },
           },
         },
-      },
-    ]);
+        {
+          $match: {
+            temp: {
+              $in: rootArray,
+            },
+          },
+        },
+      ]);
+
+      rules = rules.filter((e) => {
+        let check = true;
+        const vetrai = e.vetrai.split("^");
+        for (let i = 0; i < vetrai.length; i++) {
+          if (!rootArray.includes(vetrai[i])) {
+            check = false;
+            break;
+          }
+        }
+        delete e.temp;
+        return check;
+      });
+
+      rules.forEach((e) => {
+        if (!rootArray.includes(e.vephai)) {
+          rootArray.push(e.vephai);
+        }
+      });
+    } while (length !== rules.length);
 
     const ruleLaptop = rules.find((e) => e.vephai.includes("LT"));
 
