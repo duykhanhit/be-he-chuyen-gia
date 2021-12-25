@@ -1,6 +1,7 @@
 const asyncHandle = require("../middlewares/asyncHandle");
 const Rule = require("../models/Rule");
 const Laptop = require("../models/Laptop");
+const axios = require("axios").default;
 
 const tinhHoanVi = (input) => {
   const permArr = [],
@@ -68,12 +69,16 @@ module.exports = {
       });
     } while (length !== rules.length);
 
-    const ruleLaptop = rules.find((e) => e.vephai.includes("LT"));
+    const ruleLaptop = rules
+      .filter((e) => e.vephai.includes("LT"))
+      .map((e) => e.vephai);
 
     let laptop;
     if (ruleLaptop) {
       laptop = await Laptop.find({
-        key: ruleLaptop.vephai,
+        key: {
+          $in: ruleLaptop,
+        },
       });
     }
 
@@ -81,6 +86,50 @@ module.exports = {
       success: true,
       data: rules,
       laptop: laptop || [],
+    });
+  }),
+  removeRedundantRule: asyncHandle(async (req, res, next) => {
+    const rules = await Rule.find({});
+    const redundantRules = [];
+
+    for (let i = 0; i < rules.length; i++) {
+      const rule = rules[i];
+      const response = await axios.post(
+        `http://localhost:5000/api/tu-van/`,
+        { gt: rule.vetrai.split("^").join(" ^ ") },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      let TG = "";
+      let { data } = response.data;
+      data = data.filter((e) => {
+        const ruleExistsRedundant = redundantRules.find((v) => v.key == e.key);
+        if (ruleExistsRedundant) return false;
+        return true;
+      });
+
+      for (let j = 0; j <= data.length; j++) {
+        if (
+          j <= data.length &&
+          j > 0 &&
+          data[j - 1]._id != rule._id &&
+          TG.split(",").indexOf(data[j - 1].vephai) === -1
+        ) {
+          TG = `${TG}${data[j - 1].vephai},`.replace(" ^ ", ",");
+        }
+      }
+
+      if (TG.split(",").indexOf(rule.vephai) !== -1) {
+        redundantRules.push(rule);
+      }
+    }
+
+    return res.json({
+      success: true,
+      data: redundantRules,
     });
   }),
 };

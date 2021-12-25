@@ -11,4 +11,6 @@ router
   .delete(ruleController.delete)
   .put(ruleController.update);
 
+router.post("/rule/remove-redundant", ruleController.deleteRedundant);
+
 module.exports = router;

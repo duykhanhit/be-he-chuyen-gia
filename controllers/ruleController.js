@@ -35,6 +35,29 @@ module.exports = {
     });
   }),
 
+  deleteRedundant: asyncHandle(async (req, res) => {
+    const rule = await Rule.find({
+      key: {
+        $in: req.body.rules,
+      },
+    });
+
+    if (!rule.length) {
+      return next(new ErrorResponse(404, `Cannot delete rule`));
+    }
+
+    await Rule.deleteMany({
+      key: {
+        $in: req.body.rules,
+      },
+    });
+
+    res.json({
+      status: true,
+      data: {},
+    });
+  }),
+
   create: asyncHandle(async (req, res) => {
     const rule = await Rule.create({
       key: req.body.key,
