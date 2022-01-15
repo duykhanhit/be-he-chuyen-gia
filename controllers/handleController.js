@@ -111,10 +111,8 @@ module.exports = {
         return true;
       });
 
-      for (let j = 0; j <= data.length; j++) {
+      for (let j = 1; j <= data.length; j++) {
         if (
-          j <= data.length &&
-          j > 0 &&
           data[j - 1]._id != rule._id &&
           TG.split(",").indexOf(data[j - 1].vephai) === -1
         ) {
